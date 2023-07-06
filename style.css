@@ -41,6 +41,54 @@ body {
     box-shadow: 2px 5px 5px #333;
 }
 
+#find-quotes blockquote{
+font-size: 26px;
+min-height: 110px;
+}
+
+#find-quotes blockquote::before, #find-quotes blockquote::after {
+    content: '"';
+}
+
+#find-quotes span {
+    display: block;
+    margin-top: 10px;
+}
+
+#find-quotes span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+#find-quotes div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#find-quotes button {
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#find-quotes button:nth-child(2) {
+    background: blueviolet;
+}
 #footer {
     background-color: black;
     color: white;

@@ -1,15 +1,39 @@
-document.addEventListener('DOMContentLoaded' , () => {
-    const btn = document.getElementById('btn')
+    document.addEventListener('DOMContentLoaded', () => {
 
-    function getQuote(){
+    const the_quote = document.getElementById('the-quote')
+    const author = document.getElementById('author')
+    const new_quote= document.getElementById('new-quote')
+    const commentButton = document.getElementById('comment-button');
+    const commentInput = document.getElementById('comment-input');
+    const commentList = document.getElementById('comment-list');
 
-    fetch('https://api.quotable.io/quotes')
-    .then(response => response.json())
-    .then(data => {
+    // To display a random quote when the page loads.
 
-    }) 
+    function displayRandomQuote() {
+        fetch('https://api.quotable.io/random')
+        .then(response => response.json())
+        .then(data => {
+            the_quote.innerHTML = data.content;
+            author.innerHTML = data.author;
+        });
     }
-    btn.addEventListener('click', getQuote)
+    
+    displayRandomQuote();
+
+    new_quote.addEventListener('click', displayRandomQuote);
+
+    function addComment() {
+        const comment = commentInput.value.trim();
+        if (comment !== '') {
+          const newComment = document.createElement('li');
+          newComment.innerText = comment;
+          commentList.appendChild(newComment);
+          commentInput.value = '';
+        }
+      }
+      
+      commentButton.addEventListener('click', addComment);
+    
 
 
 
@@ -39,4 +63,3 @@ document.addEventListener('DOMContentLoaded' , () => {
   })
 
 })
-

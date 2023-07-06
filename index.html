@@ -10,26 +10,29 @@
     <div id="header">
         <h1>Awesome Quotes</h1>
     </div>
-
+    
     <br>
 
     <div class="container" id="find-quotes">
     <h1 id="title">Be Inspired</h1>
     <blockquote id="the-quote">...</blockquote>
     <span id="author">...</span>
-    <div>
-        <input type="text" id="comment-input" placeholder="Add a comment">
-        <button id="new-quote">New Quote</button>
-    </div>
-    <ul id="comment-list"></ul>
-    <div>
-    <button id="comment-button">Comment</button>
-    </div>
-    <ul id="comment-list"></ul>
+
+    <br>
+
+    <button id="new-quote">New Quote</button>
     <span id="like-button" class="heart-icon">&#10084;</span>
 
+    <div>
+        <form id="add-your-comment" action="" method="POST">
+        <input type="text" id="comment-input" placeholder="Add a comment">
+        <input type="submit" value="Comment">
+        </form>
+        
+    </div>
 
-    
+    <ul id="comment-list"></ul>
+
     </div>
 
     <br>
@@ -38,8 +41,8 @@
     <h1>Add Your Favourite Quotes</h1>
 
     <form id="create-quote" action="" method="POST">
-      <label for="new-quote">My Favourite Quote:</label>
-      <input type="text" id="new-quote" name="new-quote" placeholder="write your favourite quote">
+      <label for="my-quotes">My Favourite Quote:</label>
+      <input type="text" id="my-quotes" name="my-quotes" placeholder="write your favourite quote">
       <input onclick="addQuote()" type="submit" value="Add Quote">
     </form>
 

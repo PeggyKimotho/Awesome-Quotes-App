@@ -3,10 +3,13 @@
     const the_quote = document.getElementById('the-quote')
     const author = document.getElementById('author')
     const new_quote= document.getElementById('new-quote')
-    const commentButton = document.getElementById('comment-button');
+    const add_your_comment = document.getElementById('add-your-comment')
     const commentInput = document.getElementById('comment-input');
     const commentList = document.getElementById('comment-list');
     const likeButton = document.getElementById('like-button');
+    const form = document.getElementById('create-quote');
+    const inputBox = document.getElementById('my-quotes');
+    const quotes = document.getElementById('quotes');
 
     // To display a random quote when the page loads.
 
@@ -23,7 +26,9 @@
 
     new_quote.addEventListener('click', displayRandomQuote);
 
-    function addComment() {
+    function addComment(e) {
+        e.preventDefault();
+
         const comment = commentInput.value.trim();
         if (comment !== '') {
           const newComment = document.createElement('li');
@@ -33,7 +38,9 @@
         }
       }
       
-      commentButton.addEventListener('click', addComment);
+      
+      add_your_comment.addEventListener('submit', addComment);
+
 
 
       function toggleHeart() {
@@ -43,15 +50,6 @@
 
     likeButton.addEventListener('click', toggleHeart);
     
-
-
-
-
-
-
-    const form = document.getElementById('create-quote');
-    const inputBox = document.getElementById('new-quote');
-    const quotes = document.getElementById('quotes');
 
   function addQuote(e) {
     e.preventDefault();

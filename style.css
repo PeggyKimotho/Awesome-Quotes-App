@@ -13,6 +13,11 @@ body {
     text-align: center;
 }
 
+#new-quote {
+    font-weight: bold;
+    font-size: large;
+}
+
 #find-quotes {
     background: white;
     width: 700px;

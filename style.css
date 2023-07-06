@@ -16,30 +16,27 @@ body {
 #find-quotes {
     background: white;
     width: 700px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);  
-
-}
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
 #adding-quotes {
     background-color: white;
     width: 700px;
-    position: relative;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #333;
     padding: 15px 20px 18px 18px;
     border-radius: 5px;
-    box-shadow: 2px 5px 5px #333;
-}
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+  }
+  
 
 #find-quotes blockquote{
 font-size: 26px;
@@ -89,6 +86,18 @@ min-height: 110px;
 #find-quotes button:nth-child(2) {
     background: blueviolet;
 }
+
+.heart-icon {
+    color: grey;
+    font-size: 24px;
+    cursor: pointer;
+    
+  }
+  
+  .heart-icon.clicked {
+    color: red;
+  }
+
 #footer {
     background-color: black;
     color: white;

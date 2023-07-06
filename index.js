@@ -6,6 +6,7 @@
     const commentButton = document.getElementById('comment-button');
     const commentInput = document.getElementById('comment-input');
     const commentList = document.getElementById('comment-list');
+    const likeButton = document.getElementById('like-button');
 
     // To display a random quote when the page loads.
 
@@ -33,6 +34,14 @@
       }
       
       commentButton.addEventListener('click', addComment);
+
+
+      function toggleHeart() {
+        likeButton.classList.toggle('clicked');
+      }
+      
+
+    likeButton.addEventListener('click', toggleHeart);
     
 
 
@@ -63,3 +72,4 @@
   })
 
 })
+

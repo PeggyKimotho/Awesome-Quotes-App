@@ -10,6 +10,7 @@
     const form = document.getElementById('create-quote');
     const inputBox = document.getElementById('my-quotes');
     const quotes = document.getElementById('quotes');
+    
 
     // To display a random quote when the page loads.
 

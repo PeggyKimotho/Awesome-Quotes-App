@@ -4,7 +4,7 @@
 
 ## Description
 
-The Quote Search App is the hub for inspiration and motivation. On this site, you can find random quotes of different categories from different authors. You can like a quote and comment on it. You can also add in your favourite quotes.
+The Awesome Quotes App is the hub for inspiration and motivation. On this site, you can find random quotes of different categories from different authors. You can like a quote and comment on it. You can also add in your favourite quotes.
 
 ## Setup Requirements
 

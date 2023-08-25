@@ -1,4 +1,4 @@
-# Quote Search App
+# Awesome Quotes App
 
 ##### Created By Peggy Kimotho
 

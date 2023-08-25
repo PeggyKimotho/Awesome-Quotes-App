@@ -1,6 +1,4 @@
-# Phase1-Project
-
-## Quote Search App
+# Quote Search App
 
 ##### Created By Peggy Kimotho
 
